@@ -2,7 +2,7 @@
 source 'https://rubygems.org'
 
 # gem "rails"
-ruby '2.3.6'
+ruby '2.4.6'
 
 gem 'sinatra', '>= 2.0.2'
 gem 'arkrb', '~> 0.6.0'

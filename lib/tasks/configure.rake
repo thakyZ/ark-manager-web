@@ -29,7 +29,9 @@ task :configure do
 			ARK_INSTANCE_NAME: cli.ask('What is the ark instance name?  ') { |q| q.default = 'main' },
 			ARK_CONFIG_FOLDER: cli.ask('What is the config path?  ') { |q| q.default = "#{Dir.home}/.config/arkmanager" },
 			MEMCACHE_ADDRESS:cli.ask('What is the memcached ip address?  ') { |q| q.default = '127.0.0.1' },
-			MEMCACHE_PORT: cli.ask('What is the memcached port?  ', Integer) { |q| q.default = '11211' }
+			MEMCACHE_PORT: cli.ask('What is the memcached port?  ', Integer) { |q| q.default = '11211' },
+			ADDRESS: cli.ask('What is the webserver ip address?  ') { |q| q.default = '127.0.0.1' },
+			PORT: cli.ask('What is the webserver port?  ', Integer) { |q| q.default = '8080' }
 		}
 	end
 
